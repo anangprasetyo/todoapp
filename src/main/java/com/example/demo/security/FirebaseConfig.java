@@ -16,7 +16,7 @@ public class FirebaseConfig {
 
     @Bean
     public FirebaseApp initializeFirebase() throws IOException {
-        File file = new File("src/main/resources/secretkey.json");
+        File file = new File("src/main/resources/firebasekey.json");
         FileInputStream serviceAccount = new FileInputStream(file);
 
         FirebaseOptions options = new FirebaseOptions.Builder()
